@@ -1,10 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include <iostream>
-#include <cstring>
+#include<iostream>
+#include<cstring>
 using namespace std;
-
-#define MAX 100
 
 int main() 
 {
@@ -15,7 +13,7 @@ int main()
     
     getline(cin, s);
     
-    cout << "\n";
+    cout << endl;
 
     cin >> c;
     c = tolower(c);
