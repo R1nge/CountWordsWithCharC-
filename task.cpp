@@ -11,20 +11,22 @@ int main()
     int wordCount = 0;
     bool wordEnded = false;
     char c = '_';
+    string s = "_";
+    
+    getline(cin, s);
+    
+    cout << "\n";
 
     cin >> c;
-    
     c = tolower(c);
     
-    char arr[30] = {"Apple pie bus pork"};  
-    
-    for (int i = 0; i < strlen(arr); i++)
+    for (int i = 0; i < s.length(); i++)
     {
-        arr[i] = tolower(arr[i]);
+        s[i] = tolower(s[i]);
         
-        if(!isspace(arr[i]))
+        if(!isspace(s[i]))
         {
-            if(arr[i] == c && !wordEnded)
+            if(s[i] == c && !wordEnded)
             {
                 wordCount++;
                 wordEnded = true;
